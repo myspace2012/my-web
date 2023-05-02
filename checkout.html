@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stripe Payment Example</title>
+</head>
+<body>
+     <a href="index.html"><h5 style="color: white;">Return to Home Page</h5></a> 
+    <h1>Stripe Payment Example</h1>
+    <form action="/submit_c" method="post">
+        <label for="amount">
+            Amount:
+            <input type="number" min="1" step="0.01" name="amount" id="amount" required>
+        </label>
+        <label for="card_number">
+            Card number:
+            <input type="text" name="card_number" id="card_number" required>
+        </label>
+        <label for="exp_date">
+            Expiration date:
+            <input type="text" name="exp_date" id="exp_date" required>
+        </label>
+        <label for="cvc">
+            CVC:
+            <input type="text" name="cvc" id="cvc" required>
+        </label>
+        <input type="submit" value="Submit Payment">
+    </form>
+    <script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>

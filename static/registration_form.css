@@ -1,0 +1,10 @@
+body{background-color: rgb(145, 110, 179);color:white}
+main{width:30rem;height:100vh;
+    margin:auto auto;}
+h1,h3{text-align: center;}
+p,input{margin: 0%;padding:0%;}
+section input{width:100%;
+    background-color: rgb(48, 48, 153);}
+div input{margin-top: 5px;margin-bottom: 5px;}
+select{display:block;}
+textarea{width:60%;height:3rem;}

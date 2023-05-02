@@ -1,0 +1,7 @@
+#title{text-align:center;}
+#description{text-align:center;}
+#survey-form{width:60vw;margin:auto auto;}
+fieldset{border:0;margin:auto auto;width:60vw}
+label,textarea{display:block;margin:auto auto;
+width:60vw}
+input{width:100%}
