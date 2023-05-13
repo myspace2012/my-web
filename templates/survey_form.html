@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V8V4R6BXSY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V8V4R6BXSY');
+</script>
+
+    <title>
+      Survey Form
+    </title>
+    <link rel="stylesheet" href="/static/survey_form.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <a href="back_survey">Back to Home Page</a>
+    <p id="description">
+      Fill out a survey form
+    </p>
+    <form id="survey-form" method="POST" action="/submit_s">
+      <fieldset>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="full_name" placeholder="Your name" required>
+      </fieldset>
+      <fieldset>
+        <label for="email">Your email address:</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" required>
+      </fieldset>
+      <fieldset>
+        <label for="age">Your age:</label>
+        <input type="number" id="age" name="age" min="13" max="120" placeholder="Age" required>
+      </fieldset>
+      <fieldset>
+        <label for="sport">Your favorite sport:</label>
+        <select id="sport" name="sport">
+          <option value="basketball">Basketball</option>
+          <option value="tennis">Tennis</option>
+          <option value="swimming">Swimming</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Your favorite season:</legend>
+        <label><input type="radio" name="season" value="spring" checked>Spring</label>
+        <label><input type="radio" name="season" value="summer">Summer</label>
+        <label><input type="radio" name="season" value="fall">Fall</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your favorite time:</legend>
+        <label><input type="checkbox" name="time" value="morning" checked>Morning</label>
+        <label><input type="checkbox" name="time" value="afternoon">Afternoon</label>
+        <label><input type="checkbox" name="time" value="evening">Evening</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="3" cols="30" maxlength="50" placeholder="Less than 50 words"></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
